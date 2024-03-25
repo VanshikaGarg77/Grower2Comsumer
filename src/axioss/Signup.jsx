@@ -19,7 +19,8 @@ function Signup(){
 
     async function doSignup()
     {
-        const url="http://localhost:2006/signup/signup";
+        // const url="http://localhost:2006/signup/signup";
+        const url="https://g2c-project-3.onrender.com/signup/signup"
         const serverMsg=await axios.post(url,obj);
       console.log(serverMsg);
       if(serverMsg.data.status===true)
