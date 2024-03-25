@@ -43,7 +43,7 @@ function FindGrower() {
   {
     obj.items=event.target.value;
     
-    const url=`http://localhost:2006/avail/fetch-item?items=${obj.items}`;
+    const url=`https://g2c-project-3.onrender.com/avail/fetch-item?items=${obj.items}`;
     const serverMsg=await axios.get(url);
      
       console.log(serverMsg.data);
@@ -67,7 +67,7 @@ function FindGrower() {
 
   async function findGrowers()
   {
-    const url=`http://localhost:2006/avail/find-grower?city=${obj.city}&items=${obj.items}`;
+    const url=`https://g2c-project-3.onrender.com/avail/find-grower?city=${obj.city}&items=${obj.items}`;
 
     const serverMsg=await axios.get(url);
    

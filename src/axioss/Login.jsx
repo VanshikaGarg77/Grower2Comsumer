@@ -18,7 +18,7 @@ function Login(){
 
     async function doLogin()
     {
-        const url="http://localhost:2006/signup/login?email="+obj.email+"&password="+obj.password;
+        const url="https://g2c-project-3.onrender.com/signup/login?email="+obj.email+"&password="+obj.password;
         const serverMsg=await axios.get(url);
       console.log(serverMsg);
         if(serverMsg.data.status===true)

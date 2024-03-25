@@ -29,7 +29,7 @@ function ItemsManager() {
     //let temp = newTasks.join(',');
     // alert(temp)
 
-    const url=`http://localhost:2006/avail/update?email=${obj.email}&items=${items}&category=${category}`;
+    const url=`https://g2c-project-3.onrender.com/avail/update?email=${obj.email}&items=${items}&category=${category}`;
 
     const serverMsg=await axios.get(url);
     if(serverMsg.data.status===true)
@@ -43,7 +43,7 @@ function ItemsManager() {
 
   async function doSearch()
     {
-      const url=`http://localhost:2006/avail/fetch?email=${obj.email}`;
+      const url=`https://g2c-project-3.onrender.com/avail/fetch?email=${obj.email}`;
 
       const serverMsg=await axios.get(url);
      

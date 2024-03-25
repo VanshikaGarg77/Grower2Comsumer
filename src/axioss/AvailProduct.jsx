@@ -58,7 +58,7 @@ function AvailProduct() {
   async function doSave()
   {
     //document.getElementById("category").disabled = false;
-    const url="http://localhost:2006/avail/avail-product";
+    const url="https://g2c-project-3.onrender.com/avail/avail-product";
       
       var formdata=new FormData();
       for(var prop in obj)

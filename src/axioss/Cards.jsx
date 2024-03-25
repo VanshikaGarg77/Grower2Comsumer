@@ -13,7 +13,7 @@ function Cards(props) {
   
   async function contact(email) {
   
-    const url = `http://localhost:2006/avail/contact-grower?email=${email}`;
+    const url = `https://g2c-project-3.onrender.com/avail/contact-grower?email=${email}`;
 
     const serverMsg = await axios.get(url);
 

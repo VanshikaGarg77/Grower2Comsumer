@@ -30,7 +30,7 @@ function Profile() {
     }
     async function doSaveWithPic()
     {
-      const url="http://localhost:2006/profile/add-grower";
+      const url="https://g2c-project-3.onrender.com/profile/add-grower";
       
       var formdata=new FormData();
       for(var prop in obj)
@@ -57,7 +57,7 @@ function Profile() {
 
     async function doUpdatedata()
     {
-      const url="http://localhost:2006/profile/update";
+      const url="https://g2c-project-3.onrender.com/profile/update";
       
       var formdata=new FormData();
       for(var prop in obj)
@@ -74,7 +74,7 @@ function Profile() {
     }
     async function doSearch()
     {
-      const url="http://localhost:2006/profile/fetch?email="+obj.email;
+      const url="https://g2c-project-3.onrender.com/profile/fetch?email="+obj.email;
 
       const serverMsg=await axios.get(url);
      
@@ -93,7 +93,7 @@ function Profile() {
 
     async function doSearchWithToken()
     {
-      const url="http://localhost:2006/profile/fetch-token?email="+obj.email;
+      const url="https://g2c-project-3.onrender.com/profile/fetch-token?email="+obj.email;
 
       const serverMsg=await doSearchAndValidateToken(obj.email);
      
