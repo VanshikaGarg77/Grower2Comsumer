@@ -107,36 +107,7 @@ function Profile() {
         alert(serverMsg.data.msg);        
     }
   return (
-    /*<div className="border border-black m-auto w-[600px]">
-        <p className="text-center font-bold text-lg m-4">Profile</p>
-        <p>Email Address:
-        <input type="email" name="email" onChange={doUpdate} className="border border-gray-900 m-2 h-8 rounded-2xl"/>
-        <input type="button" value="Search" onClick={doSearch} className='bg-blue-500 text-white w-20 h-7'/></p>
-
-        <p>First Name:<input type="text" value={obj.fname} onChange={doUpdate} name="fname" className="border border-gray-900 m-2 h-8 rounded-2xl"/></p>
-
-       <p> Last Name:<input type="text" value={obj.lname} onChange={doUpdate} name="lname" className="border border-gray-900 m-2 h-8 rounded-2xl"/> </p>
-       
-        <p>Mobile: <input type="number" name="mobile" value={obj.mobile} onChange={doUpdate} className="border border-gray-900 m-2 h-8 rounded-2xl"/></p>
-
-        <p>Street Address: <input type="text" onChange={doUpdate} value={obj.address} name="address" className="border border-gray-900 m-2 h-8 rounded-2xl"/></p>
-
-        <p>Village: <input type="text" value={obj.village} onChange={doUpdate} name="village" className="border border-gray-900 m-2 h-8 rounded-2xl"/>
-
-        City: <input type="text" value={obj.city} onChange={doUpdate} name="city" className="border border-gray-900 m-2 h-8 rounded-2xl"/></p>
-        <p>
-
-          Aadhar Number:<input type='number' value={obj.aadhar} onChange={doUpdate} name="aadhar" className="border border-gray-900 m-2 h-8 rounded-2xl"></input>
-        </p><br/>
-
-        Upload Aadhar Card:<br/><input type="file" name="ppic" onChange={updatePic}/>
-        <img src={prev} className="w-[600px] h-[200px]"/>
-
-        <p className='text-center'><input type="button" value="Update" onClick={doUpdatedata} className='bg-blue-500 text-white w-20 h-7 mx-14 my-4'/>
-        <input type="button" value="Register" className='bg-blue-500 text-white w-20 h-7'onClick={doSaveWithPic}/></p>
-        <input type="button" value="SaveMVC" className='bg-blue-500 text-white w-20 h-7'onClick={doSaveMVC}/>
-    </div>*/
-    <div className="w-[800px] m-auto">
+    <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 sm:mx-6 md:mx-8 lg:mx-10 xl:mx-[200px] 2xl:mx-20">
       <form>
   <div class="space-y-12">
     <div class="border-b border-gray-900/10 pb-4">

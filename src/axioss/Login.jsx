@@ -41,26 +41,7 @@ function Login(){
     return(
         
         <div class="bg-gradient-to-r from-purple-500 to-pink-500">
-       
-        {/* <p style={{background-image: "url('dowmload.jpeg')"}}></p> */}
         <section>
-        {/* <div className="w-[400px]"> */}
-        {/* <img src="Signup.jpeg" className="w-[400px] h-[550px] py-10"/> */}
-        {/* </div> */}
-        {/* <div className="w-[300px]">
-        <h1 className="text-center m-5 text-blue-700 font-bold text-4xl">Login</h1>
-        <br/>
-        <p className="text-xl">Email:</p>
-        <br/>
-        <p><input type="email" className="border border-black rounded-xl" onChange={doUpdate} name="email"/></p>
-        <br/>
-        <p className="text-xl">Passcode:</p>
-        <br/>
-        <p><input type="password" className="border border-black rounded-xl" onChange={doUpdate} name="password"/></p>
-        <br/>
-
-        <p><input type="button" value="Login" onClick={doLogin} className='bg-blue-500 text-white w-20 h-7 mx-4 my-8 rounded-xl'/></p>
-        </div> */}
 
         
   <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
@@ -94,9 +75,9 @@ function Login(){
                   <p class="text-sm font-light text-gray-500 dark:text-gray-400">
                       Don’t have an account yet? <a href="#" onClick={()=>navigate("/signupPage")} class="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign up</a>
                   </p>
-                  <input type="button" onClick={()=>{
+                  {/* <input type="button" onClick={()=>{
                 navigate("/webtokentest");
-            }} className='border border-black p-2 mt-5'  value="Test Json Web Token"/>
+            }} className='border border-black p-2 mt-5'  value="Test Json Web Token"/> */}
               </form>
           </div>
       </div>

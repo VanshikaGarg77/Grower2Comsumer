@@ -78,50 +78,47 @@ function AvailProduct() {
   }
   return (
 
-    <div className="w-[800px] m-auto">
+    <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 sm:mx-6 md:mx-8 lg:mx-10 xl:mx-[200px] 2xl:mx-20">
         <h1 className='font-bold text-xl text-center py-2'>Avail Product</h1>
         <form>
        <div class="space-y-12">
 
-    <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-      <div class="sm:col-span-4">
-          <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
-          <div class="mt-2 flex">
-            <input id="email" name="email" type="email" onChange={doUpdate} autocomplete="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
-          </div>
+       <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+            <div class="sm:col-span-4">
+                <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+                <div class="mt-2 flex">
+                    <input id="email" name="email" type="email" onChange={doUpdate} autocomplete="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
+                </div>
+            </div>
+            <div class="sm:col-span-6 md:col-span-3">
+                <label for="country" class="block text-sm font-medium leading-6 text-gray-900">Product Category</label>
+                <div class="mt-2">
+                    <select id="category" name="category" onChange={doUpdate} autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
+                        <option value="Select" disabled selected>Select category</option>
+                        <option value="Milk Products">Milk Products</option>
+                        <option value="Vegetables">Vegetables </option>
+                        <option value="Fruits">Fruits</option>
+                        <option value="Fruits and Vegetables">Fruits and Vegetables</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+            </div>
+            <div class="sm:col-span-6 md:col-span-3">
+                <label for="country" class="block text-sm font-medium leading-6 text-gray-900">Category items</label>
+                <div class="mt-2">
+                    <select onChange={addItem} autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
+                        <option value="Select" disabled selected>Select item</option>
+                        {options}
+                    </select>
+                </div>
+            </div>
+            <div class="sm:col-span-6">
+                <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">Items of selected category:</label>
+                <div class="mt-2">
+                    <input type="text" value={prod} name="items" id="street-address" autocomplete="street-address" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
+                </div>
+            </div>
         </div>
-
-        <div class="sm:col-span-3">
-          <label for="country" class="block text-sm font-medium leading-6 text-gray-900">Product Category</label>
-          <div class="mt-2">
-            <select id="category" name="category" onChange={doUpdate} autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
-            <option value="Select" disabled selected>Select category</option>
-            <option value="Milk Products">Milk Products</option>
-            <option value="Vegetables">Vegetables </option>
-            <option value="Fruits">Fruits</option>
-            <option value="Fruits and Vegetables">Fruits and Vegetables</option>
-            <option value="Others">Others</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="sm:col-span-3">
-          <label for="country" class="block text-sm font-medium leading-6 text-gray-900">Category items</label>
-          <div class="mt-2">
-            <select onChange={addItem} autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
-            <option value="Select" disabled selected>Select item</option>
-           {options}
-            </select>
-          </div>
-        </div>
-        <div class="col-span-4">
-          <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">Items of selected category:</label>
-          <div class="mt-2">
-            <input type="text" value={prod} name="items" id="street-address" autocomplete="street-address" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
-          </div>
-        </div>
-        </div>
-
         <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
 
       <div class="col-span-full">
