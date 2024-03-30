@@ -7,7 +7,7 @@ function GrowerDash() {
   return (
     <div>
    <p className="text-3xl text-center m-4">GROWER DASHBOARD</p> 
-    <div className='flex flex-wrap mx-4 sm:mx-8 md:mx-12 lg:mx-16 xl:mx-20'>
+    <div className='flex flex-wrap mx-4 sm:mx-8 md:mx-12 lg:mx-16 xl:mx-20 justify-center space-x-4'>
         <div class="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
   <div
     class="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
@@ -17,12 +17,12 @@ function GrowerDash() {
   </div>
   <div class="p-6">
     <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-      Profile Form
+      Complete Your Profile
     </h5>
     <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
-      The place is close to Barceloneta Beach and bus stop just 2 min by walk
-      and near to "Naviglio" where you can enjoy the main night life in
-      Barcelona.
+    Begin your journey by enriching your profile with accurate
+     details, whether it's completing it for the first time or updating it with
+      the latest information about yourself.
     </p>
   </div>
   <div class="p-6 pt-0">
@@ -47,9 +47,8 @@ function GrowerDash() {
       Avail Product
     </h5>
     <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
-      The place is close to Barceloneta Beach and bus stop just 2 min by walk
-      and near to "Naviglio" where you can enjoy the main night life in
-      Barcelona.
+      It empowers growers to select categories and items tailored specifically to their domain, 
+      ensuring an exquisite array of products available for consumers.
     </p>
   </div>
   <div class="p-6 pt-0">
@@ -74,9 +73,9 @@ function GrowerDash() {
       Items Manager
     </h5>
     <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
-      The place is close to Barceloneta Beach and bus stop just 2 min by walk
-      and near to "Naviglio" where you can enjoy the main night life in
-      Barcelona.
+    Growers wield the power to curate their offerings by selecting 
+    items according to their availability, ensuring a diverse and abundant array of 
+    products.
     </p>
   </div>
   <div class="p-6 pt-0">
