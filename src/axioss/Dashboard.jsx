@@ -2,6 +2,7 @@ import React from 'react';
 import Services from "./Services";
 import Developer from "./Developer";
 import Reach from "./Reach";
+// import CarouselDefault from "./CarouselDefault";
 
 function Dashboard() {
   return ( 
@@ -51,7 +52,7 @@ function Dashboard() {
 </div> */}
 
 <img src="grower.png" alt="" className="w-full h-[500px]"/>
-
+{/* <CarouselDefault/> */}
 <Services/>
 <Developer/>
 <Reach/>

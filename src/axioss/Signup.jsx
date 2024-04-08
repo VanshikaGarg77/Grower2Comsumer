@@ -25,35 +25,14 @@ function Signup(){
       console.log(serverMsg);
       if(serverMsg.data.status===true)
            { 
-            navigate('/loginPage');
+            navigate('/login');
            }
         else    
             alert(serverMsg.data.err);
     }
 
     return(
-        /*<div className="border border-white m-auto w-[800px] flex p-20">
-        <div className="w-[500px]">
-        <img src="Signup.jpeg" className="w-[500px]"/>
-        </div>
-        <div className="w-[300px]">
-        <h1 className="text-center m-5 text-blue-700 font-bold text-4xl">Signup</h1>
-
-        <p className="text-xl">Email:</p>
-        <p><input type="email" className="border border-black rounded-xl" onChange={doUpdate} name="email"/></p>
-        <br/>
-        <p className="text-xl">Passcode:</p>
-        <p><input type="password" className="border border-black rounded-xl" onChange={doUpdate} name="password"/></p>
-        <br/>
-        <p className="text-xl">Select Service:</p>
-        <p><input type="radio" name="type" value="Grower" className="m-2" onChange={doUpdate}/>Grower</p>
-        <p><input type="radio" name="type" className="m-2" value="Consumer" onChange={doUpdate}/>Consumer</p>
-
-        <p><input type="button" value="Signup" onClick={doSignup} className='bg-blue-500 text-white w-20 h-7 mx-4 my-8 rounded-xl'/></p>
-        </div>
-        </div>*/
-
-        <div class="bg-gradient-to-r from-purple-500 to-pink-500">
+    <div class="bg-gradient-to-r from-purple-500 to-pink-500">
         <section>
   <div class="flex flex-col items-center px-6 py-8 mx-auto md:h-screen lg:py-0">
       
@@ -77,7 +56,7 @@ function Signup(){
 
                   <button type="button" onClick={doSignup} class="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign in</button>
                   <p class="text-sm font-light text-gray-500 dark:text-gray-400">
-                      Already have an account? <a href="#" onClick={()=>navigate("/loginPage")} class="font-medium text-primary-600 hover:underline dark:text-primary-500">Login here</a>
+                      Already have an account? <a href="#" onClick={()=>navigate("/login")} class="font-medium text-primary-600 hover:underline dark:text-primary-500">Login here</a>
                   </p>
               </form>
           </div>

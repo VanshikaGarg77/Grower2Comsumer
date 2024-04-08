@@ -5,11 +5,11 @@ function NavBar() {
     const navigate=useNavigate()
     function doLogin()
     {
-        navigate('/loginPage')
+        navigate('/login')
     }
     function doSignup()
     {
-        navigate('/signupPage')
+        navigate('/signup')
     }
     function doLogout()
     {

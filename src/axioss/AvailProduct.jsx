@@ -78,7 +78,7 @@ function AvailProduct() {
   }
   return (
 
-    <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 sm:mx-6 md:mx-8 lg:mx-10 xl:mx-[200px] 2xl:mx-20">
+    <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 sm:mx-6 md:mx-8 lg:mx-10 xl:mx-[200px]">
         <h1 className='font-bold text-xl text-center py-2'>Avail Product</h1>
         <form>
        <div class="space-y-12">

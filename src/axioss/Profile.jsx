@@ -107,7 +107,7 @@ function Profile() {
         alert(serverMsg.data.msg);        
     }
   return (
-    <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 sm:mx-6 md:mx-8 lg:mx-10 xl:mx-[200px] 2xl:mx-20">
+    <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 sm:mx-6 md:mx-8 lg:mx-10 xl:mx-[200px]">
       <form>
   <div class="space-y-12">
     <div class="border-b border-gray-900/10 pb-4">

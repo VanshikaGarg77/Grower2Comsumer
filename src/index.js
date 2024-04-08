@@ -29,8 +29,8 @@ root.render(
     {/* <GrowerDash/> */}
     {/* <Dashboard/> */}
     <Routes>
-        <Route path="/loginPage" element={<Login/>}/>
-        <Route path="/signupPage" element={<Signup/>}/>
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/signup" element={<Signup/>}/>
         <Route path="/opengrower" element={<GrowerDash/>}/>
         <Route path="/profile" element={<Profile/>}/>
         <Route path="/avail" element={<AvailProduct/>}/>
