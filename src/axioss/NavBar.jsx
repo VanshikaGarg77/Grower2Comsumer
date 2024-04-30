@@ -16,6 +16,7 @@ function NavBar() {
       localStorage.removeItem("token");
         navigate('/');
     }
+    const token=localStorage.getItem("token");
   return (
     <div>
         <nav class="bg-gray-800">
@@ -76,8 +77,12 @@ function NavBar() {
           </div>
         </div>  */}
         {/* <input type="button" value="Signup" onClick={doSignup} class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"/> */}
-        <input type="button" value="Login" onClick={doLogin} class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium m-2"/>
-        <input type="button" value="Logout" onClick={doLogout} class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium m-2"/>
+        {!token &&(
+        <input type="button" value="Login" onClick={doLogin} class="bg-gray-300 hover:text-gray-700 hover:bg-white block rounded-md px-3 py-2 text-base font-medium m-2"/>
+        )}
+        {token && (
+        <input type="button" value="Logout" onClick={doLogout} class="bg-gray-300 hover:text-gray-700 hover:bg-white block rounded-md px-3 py-2 text-base font-medium m-2"/>
+        )}
       </div>
     </div>
   </div>
